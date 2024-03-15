@@ -1,45 +1,50 @@
-# AutomationApiProject
-Base example of an automation project to test APIs (BE)
+Projeto de Automação de API
+
+Exemplo básico de um projeto de automação para testar APIs (Backend).
 
 Java + RestAssured + TestNG + mvn
 
-**Installation:**
+Instalação:
 
-- Make sure you have configured and installed java on your computer. JDK 1.8 should be okay. Resource: https://java.com/en/download/help/download_options.html
-- You will need maven as well. mvn guide: https://maven.apache.org/install.html
+    Certifique-se de ter configurado e instalado o Java em seu computador. O JDK 1.8 deve estar adequado. Recurso: https://java.com/en/download/help/download_options.html
+    Você também precisará do Maven. Guia do Maven: https://maven.apache.org/install.html
 
-_Desirable_: 
-- An IDE, like IntelliJ. If you are using Eclipse should be fine as well. https://www.jetbrains.com/es-es/idea/download/ (Make sure to download the Community version, no the Ultimate)
+Desejável:
 
-**How to Run the tests:**
-- Make sure to import this project as a mvn project instead of just opening the main folder
-- If you are using IntelliJ you may go to the Maven tab and update the project (Reload All Maven Projects - option), if you are using other IDE or no IDE at all go to the terminal/console, your project location and run: 
-- - > mvn clean install
-- Go to your project folder > AutomationApiProject > src/test/testngRunners/ > SingleTest.xml  file > right click & run 
-- A new window will be opened and after a couple of ms you will get something like this:
+    Um IDE, como o IntelliJ. Se estiver usando o Eclipse, também deve funcionar bem. https://www.jetbrains.com/es-es/idea/download/ (Certifique-se de baixar a versão Community, não a Ultimate)
 
-```
+Como executar os testes:
+
+    Certifique-se de importar este projeto como um projeto Maven, em vez de apenas abrir a pasta principal.
+    Se estiver usando o IntelliJ, você pode ir para a guia Maven e atualizar o projeto (opção Recarregar Todos os Projetos Maven), se estiver usando outro IDE ou nenhum IDE, vá para o terminal/console, vá para a localização do seu projeto e execute:
+
+            mvn clean install
+
+    Vá para a pasta do seu projeto > AutomationApiProject > src/test/testngRunners/ > arquivo SingleTest.xml > clique com o botão direito e execute
+    Uma nova janela será aberta e, após alguns milissegundos, você obterá algo assim:
+
+markdown
+
 ===============================================
- AutomationApiSuite
- Total tests run: 1, Failures: 0, Skips: 0
+ Suite de Automação de API
+ Total de testes executados: 1, Falhas: 0, Ignorados: 0
 ===============================================
 
-Process finished with exit code 0
-```
+Processo finalizado com código de saída 0
 
-If you get a failure could be a simple endpoint error, 
+Se ocorrer uma falha, pode ser um erro simples de endpoint,
 
-if you get an error make sure all the mvn dependencies/packages are fully installed before running (it could take some time)
+se ocorrer um erro, certifique-se de que todas as dependências/pacotes Maven estejam totalmente instalados antes de executar (isso pode levar algum tempo)
 
-**Available Suites:**
+Suites Disponíveis:
 
-There are at least three types of regression suites in this project:
-- Smoke test: /src/test/testngRunners/SingleTest.xml
-- Sanity test: /src/test/testngRunners/SanityApiRegression.xml
-- Full Regression: /src/test/testngRunners/FullApiRegression.xml
+Existem pelo menos três tipos de suites de regressão neste projeto:
 
-if you have already installed TestNG just need to right click > run '<yourfile>Regression.xml' or to run all the tests use this file:
-- testng.xml
+    Teste de Smoke: /src/test/testngRunners/SingleTest.xml
+    Teste de Sanidade: /src/test/testngRunners/SanityApiRegression.xml
+    Regressão Completa: /src/test/testngRunners/FullApiRegression.xml
+
+se você já instalou o TestNG, basta clicar com o botão direito > executar '<seuarquivo>Regression.xml' ou para executar todos os testes, use este arquivo:
 
 ![alt text](https://github.com/cvera08/AutomationApiProject/blob/master/src/main/resources/Images/AutomationApiProject_–_API_Suites.png)
 
