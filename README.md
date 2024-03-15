@@ -45,6 +45,7 @@ Existem pelo menos três tipos de suites de regressão neste projeto:
     Regressão Completa: /src/test/testngRunners/FullApiRegression.xml
 
 se você já instalou o TestNG, basta clicar com o botão direito > executar '<seuarquivo>Regression.xml' ou para executar todos os testes, use este arquivo:
+testng.xml
 
 ![alt text](https://github.com/cvera08/AutomationApiProject/blob/master/src/main/resources/Images/AutomationApiProject_–_API_Suites.png)
 
